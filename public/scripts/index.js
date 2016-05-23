@@ -304,7 +304,7 @@ function killInstance(){
 
 function showInstanceGUID(){
 	xhrGet(REST_DATA+"/instance-guid", function(data){
-		document.getElementById('instance-guid').innerHTML = "Instance GUID "+data+"  <button class='deleteBtn' onclick='killInstance' title='Kill Server Instance' alt='kill instance'></button>";
+		document.getElementById('instance-guid').innerHTML = "Instance GUID "+data+"  <button class='deleteBtn' onclick='killInstance()' title='Kill Server Instance' alt='kill instance'></button>";
 	});
 }
 
@@ -312,4 +312,4 @@ showInstanceGUID();
 
 showLoadingMessage();
 //updateServiceInfo();
-loadItems();
+//loadItems();
