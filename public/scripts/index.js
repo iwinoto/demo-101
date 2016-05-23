@@ -304,7 +304,7 @@ function killInstance(){
 
 function showInstanceGUID(){
 	xhrGet(REST_DATA+"/instance-guid", function(data){
-		document.getElementById('instance-guid').innerHTML = "Instance GUID "+data;
+		document.getElementById('instance-guid').innerHTML = "Instance GUID "+data+"  <span class='deleteBtn' onclick='killInstance' title='Kill Server Instance'></span>";
 	});
 }
 
