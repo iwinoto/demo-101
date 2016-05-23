@@ -308,7 +308,8 @@ function showInstanceGUID(){
 	});
 }
 
-showLoadingMessage();
 showInstanceGUID();
+
+showLoadingMessage();
 //updateServiceInfo();
 loadItems();
