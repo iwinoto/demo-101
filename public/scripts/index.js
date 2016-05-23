@@ -289,7 +289,6 @@ function toggleAppInfo(){
 	node.style.display = node.style.display == 'none' ? '' : 'none';
 }
 
-
 function showLoadingMessage()
 {
 	document.getElementById('loadingImage').innerHTML = "Loading data "+"<img height=\"100\" width=\"100\" src=\"images/loading.gif\"></img>";
@@ -303,6 +302,13 @@ function killInstance(){
 		xhrGet(REST_DATA+"/killInstance", function(data){});
 }
 
+function showInstanceGUID(){
+	xhrGet(REST_DATA+"/instance-guid", function(data){
+		document.getElementById('instance-guid').innerHTML = "Instance GUID "+data;
+	});
+}
+
 showLoadingMessage();
+showInstanceGUID();
 //updateServiceInfo();
 loadItems();

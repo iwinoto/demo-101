@@ -433,6 +433,13 @@ app.get('/api/favorites/killInstance', function(request, response) {
 	process.exit(-1);
 });
 
+app.get('/api/favorites/instance-guid', function(request, response) {
+	console.log("Instance ID = ");
+	response.write(JSON.stringify(process.env.CF_INSTANCE_INDEX));
+	response.end();
+});
+
+
 http.createServer(app).listen(app.get('port'), '0.0.0.0', function() {
 	console.log('Express server listening on port ' + app.get('port'));
 });
