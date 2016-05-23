@@ -302,15 +302,15 @@ function killInstance(){
 		xhrGet(REST_DATA+"/killInstance", function(data){});
 }
 
-function showInstanceGUID(){
-	xhrGet(REST_DATA+"/instance-guid", function(data){
-		document.getElementById('instance-guid').innerHTML = "Instance GUID "+data
+function showInstanceIndex(){
+	xhrGet(REST_DATA+"/instanceIndex", function(data){
+		document.getElementById('instanceIndex').innerHTML = "Instance Index: "+data
 			+"  <button class='deleteBtn' onclick='killInstance()' title='Kill Server Instance' alt='kill instance'></button>"
 			;
 	});
 }
 
-showInstanceGUID();
+showInstanceIndex();
 
 showLoadingMessage();
 //updateServiceInfo();

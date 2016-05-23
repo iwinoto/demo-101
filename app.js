@@ -433,7 +433,7 @@ app.get('/api/favorites/killInstance', function(request, response) {
 	process.exit(-1);
 });
 
-app.get('/api/favorites/instance-guid', function(request, response) {
+app.get('/api/favorites/instanceIndex', function(request, response) {
 	var instance = process.env.CF_INSTANCE_INDEX;
 	console.log("Instance ID = " + instance);
 	response.write(JSON.stringify(instance));
