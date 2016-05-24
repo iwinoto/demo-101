@@ -2,7 +2,7 @@ applications:
 - path: .
   memory: 256M
   instances: 1
-  domain: mybluemix.net
+  domain: au-syd.mybluemix.net
   name: westpac-test
   host: westpac-test
   disk_quota: 512M
