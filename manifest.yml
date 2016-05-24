@@ -9,4 +9,4 @@ applications:
   services:
   - westpac-test-cloudantNoSQLDB
   env:
-    NODE_ENV: production
+    NODE_ENV: development
