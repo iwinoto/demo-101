@@ -1,7 +1,7 @@
 /**
  * Module dependencies.
  */
-var as_agent = requite('bluemix-autoscaling-agent');
+var as_agent = require('bluemix-autoscaling-agent');
 var express = require('express'), routes = require('./routes'), user = require('./routes/user'), http = require('http'), path = require('path'), fs = require('fs');
 
 var app = express();
