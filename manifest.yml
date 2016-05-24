@@ -8,3 +8,5 @@ applications:
   disk_quota: 512M
   services:
   - westpac-test-cloudantNoSQLDB
+  env:
+  - NODE_ENV: production
