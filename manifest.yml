@@ -3,8 +3,8 @@ applications:
   memory: 256M
   instances: 1
   domain: au-syd.mybluemix.net
-  name: westpac-test
-  host: westpac-test
+  name: demo-101
+  host: demo-101
   disk_quota: 512M
   services:
   - demo-cloudantNoSQLDB
